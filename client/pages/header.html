@@ -1,0 +1,41 @@
+<template name="header">
+
+		<nav class="navbar navbar-inverse fornav navbar-fixed-top affix" id="navbar-scroll"  style="  background: rgba(24, 24, 24, 1)!important;padding:20px" data-spy="affix" data-offset-top="197">
+
+				  <div class="navbar-header">
+					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand"  href="{{ pathFor 'Index'}}" style="color: #FFFFFF;"> LOGO OF TASK MANAGER</a>
+				  </div>
+				  <div>
+					<div class="collapse navbar-collapse pull-right" id="myNavbar">
+					  <ul class="nav navbar-nav " style="color: #FFFFFF">
+							
+							<li><a  href="{{ pathFor 'Index'}}" style="color:#FFFFFF;" id ="forhover">
+										<span class="glyphicon glyphicon-plus "  style="margin-right:10px;"></span>ADD TASK</a>
+									</li>
+
+							<li class="dropdown"><a class="dropdown-toggle" style="color: #FFFFFF"  id ="forhover" data-toggle="dropdown" href="#">
+									<span class="glyphicon glyphicon-th" style="margin-right:10px;color: #FFFFFF"></span>LOGIN<span class="caret"></span></a>
+								  <ul class="dropdown-menu">
+										
+									<li><a href="{{ pathFor 'Login'}}">Log in</a></li>
+									<li><a href="{{ pathFor 'Register'}}">Sign Up</a></li>
+									<li><a href="#section42">Recover Account</a></li>
+								  </ul>
+								</li>
+					
+								<li>
+										<a href="{{ pathFor 'infoStudents'}}" style="color:#FFFFFF;" id ="forhover">
+												<span class="glyphicon glyphicon-th-large" style="margin-right:10px;"></span>ABOUT US</a>
+								</li>
+					
+					  </ul>
+					</div>
+				  </div>
+			  </nav>    
+
+</template>

@@ -1,0 +1,15 @@
+<template name="home">
+  
+    <br/><br/><br/><br/>
+
+    <div class="container-fluid">
+        <h3>My List</h3>
+        {{> addlist}}
+        <ol type="1">
+            {{#each listitem}}
+                <li><a href="/list/{{_id}}">{{name}}</a></li>
+            {{/each}}
+        </ol>   
+    </div>
+
+</template>

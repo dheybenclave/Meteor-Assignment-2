@@ -1,0 +1,22 @@
+<template name="task">
+
+    <br/><br/><br/><br/><br/>
+    
+    <div class="container-fuild">
+            <br/>
+            {{> addtask}}
+        </div>
+        <br/><br/><br/><br/><br/>
+        {{> counttask}}
+        <br/><br/><br/><br/><br/>
+        <div class="container-fuild">
+            <ol type="1">
+                    {{#each task}}
+                        {{> taskitem}}
+                    {{/each}}
+            </ol>
+
+                  
+        </div>
+             
+</template>
